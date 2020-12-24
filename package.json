@@ -1,0 +1,37 @@
+{
+  "name": "mongoose-trx",
+  "version": "0.0.0",
+  "description": "A simple helper for hassle-free mongoose transactions",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive --exit",
+    "coverage": "nyc --all npm test",
+    "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
+    "lint": "eslint --ignore-path .gitignore .",
+    "lint:fix": "eslint --ignore-path .gitignore . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleG94/mongoose-trx.git"
+  },
+  "keywords": [
+    "mongoose",
+    "transaction"
+  ],
+  "author": "Alessandro Genovese",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AleG94/mongoose-trx/issues"
+  },
+  "homepage": "https://github.com/AleG94/mongoose-trx#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "coveralls": "^3.1.0",
+    "eslint": "^7.16.0",
+    "mocha": "^8.2.1",
+    "mongoose": "^5.11.8",
+    "nyc": "^15.1.0",
+    "sinon": "^9.2.2"
+  }
+}
